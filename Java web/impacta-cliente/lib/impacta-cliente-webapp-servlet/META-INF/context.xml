@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context docBase="impacta-cliente-webapp-servlet.war" path="/impacta"
+	reloadable="true" source="org.eclipse.jst.jee.server:impacta-cliente-webapp-servlet" />

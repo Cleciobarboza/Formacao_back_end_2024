@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.impl.MunicipioController">
+   <top>
+      <AnchorPane prefHeight="68.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="3.0" layoutY="11.0" prefHeight="16.0" prefWidth="31.0" text="%key.uf" />
+            <ComboBox fx:id="ufCombo" layoutX="34.0" layoutY="6.0" prefHeight="26.0" prefWidth="112.0" />
+            <Label layoutX="155.0" layoutY="11.0" prefHeight="16.0" prefWidth="68.0" text="%key.municipio" />
+            <TextField fx:id="municipioText" layoutX="221.0" layoutY="6.0" prefHeight="26.0" prefWidth="373.0" />
+            <Button fx:id="cancelarButton" layoutX="481.0" layoutY="36.0" mnemonicParsing="false" text="%key.cancelar" />
+            <Button fx:id="okButton" layoutX="557.0" layoutY="36.0" mnemonicParsing="false" text="%key.ok" />
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <ScrollPane fitToHeight="true" fitToWidth="true" mouseTransparent="true">
+         <content>
+            <TableView fx:id="municipios" prefHeight="200.0" prefWidth="600.0">
+              <columns>
+                <TableColumn fx:id="municipioColumn" editable="false" prefWidth="482.0" sortable="false" text="%key.municipio" />
+                <TableColumn fx:id="ufColumn" editable="false" minWidth="0.0" prefWidth="117.0" sortable="false" text="%key.uf" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </content>
+      </ScrollPane>
+   </center>
+</BorderPane>

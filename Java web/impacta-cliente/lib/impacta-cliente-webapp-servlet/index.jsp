@@ -1,0 +1,1 @@
+<jsp:forward page="cliente/listar"></jsp:forward>
